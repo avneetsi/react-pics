@@ -1,3 +1,6 @@
+# Pics App
+It fetch pictures from unsplash api and renders them. It is a react app to practice handling forms, making api request, rendering list and refs.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
