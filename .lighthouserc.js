@@ -3,8 +3,5 @@ module.exports = {
     upload: {
       target: "temporary-public-storage",
     },
-    collect: {
-      url: ["http://localhost"],
-    },
   },
 };
