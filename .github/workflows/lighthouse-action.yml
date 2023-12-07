@@ -8,8 +8,7 @@ on:
       - 'master'
 
 jobs:
-  if_merged_or_opened:
-    if: ${{ (github.event.action == 'opened') || (github.event.pull_request.merged == true) }}
+  lhci:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
