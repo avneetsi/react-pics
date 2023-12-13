@@ -1,14 +1,8 @@
 name: CI
 
 on:
-  pull_request:
-    types:
-      - opened
-    branches:
-      - 'master'
   merge_group:
     types: [checks_requested]
-
 
 jobs:
   lhci:
