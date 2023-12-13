@@ -5,6 +5,7 @@ on:
 
 jobs:
   validate-pr:
+    name: Validate PR
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
