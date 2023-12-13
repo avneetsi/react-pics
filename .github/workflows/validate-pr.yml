@@ -6,6 +6,7 @@ on:
 
 jobs:
   validate-pr:
+    if: ${{ github.event_name == 'merge_group' }}
     name: Validate PR
     runs-on: ubuntu-latest
     steps:
