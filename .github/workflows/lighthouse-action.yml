@@ -3,12 +3,9 @@ name: CI
 on:
   pull_request:
     types: [auto_merge_enabled]
-  merge_group:
-    types: [checks_requested]
 
 jobs:
   lhci:
-    if: ${{ github.event_name == 'merge_group' }}
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
