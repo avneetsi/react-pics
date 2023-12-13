@@ -3,8 +3,6 @@ name: Validate code in the merge queue
 on:
   pull_request:
     types: [auto_merge_enabled]
-  merge_group:
-    types: [checks_requested]
 
 jobs:
   validate-pr:
