@@ -1,12 +1,11 @@
 name: CI
 
 on:
-  pull_request:
   merge_group:
+    types: [checks_requested]
 
 jobs:
   lhci:
-    if: github.event_name != 'pull_request' || github.event.action == 'enqueued'
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
