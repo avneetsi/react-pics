@@ -6,6 +6,7 @@ on:
 
 jobs:
   lhci:
+    if: ${{ github.event_name == 'merge_group' }}
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
