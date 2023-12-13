@@ -2,7 +2,9 @@ name: CI
 
 on:
   pull_request:
+    types: [auto_merge_enabled]
   merge_group:
+    types: [checks_requested]
 
 jobs:
   lhci:
